@@ -1,14 +1,11 @@
-95% of storage used … If you run out, you won't have enough storage to create, edit, and upload files. Get 100 GB of storage for RM 8.49 RM 2.15/month for 3 months.
 #include "hash_tables.h"
 
 /**
- * key_index - Get the index at which a key/value
- *      pair should be stored in array of a hash table.
- * @key: The key to get the index of.
- * @size: The size of the array of the hash table.
+ * key_index - get index for key given
+ * @key: key (string) to hash
+ * @size: size of hash table
  *
- * Return: The index of the key.
- * Description: Uses the djb2 algorithm.
+ * Return: index of 'key' using djb2
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
